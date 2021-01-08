@@ -29,6 +29,7 @@
     "drr-bot": "file:discord-bot",
     "drr-interface": "file:interface",
     "drr-languages": "file:languages",
+    "drr-logger": "file:logger",
     "drr-updater": "file:updater"
   }
 }
