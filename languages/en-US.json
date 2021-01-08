@@ -16,7 +16,7 @@
     "bot.command.start.started": "Game started with sucessful!\n\n**Game Order:**\n```$0```\n\n**See the next event with '$1next'**",
     "bot.command.next": "Getting the next event",
     "bot.command.next.owner": "Only the owner of session can get next event",
-    "bot.command.next.killed": "**$0** feels a bullet pierce his head falling dead on the floor",
+    "bot.command.next.killed": "**$0** feels a bullet pierce his head, falling dead on the floor",
     "bot.command.next.nokilled": "**$0** hears the revolver click, but nothing happens",
     "bot.command.cancel": "Session cancelled and deleted",
     "bot.command.cancel.owner": "Only the owner of session can cancel and delete the session",
