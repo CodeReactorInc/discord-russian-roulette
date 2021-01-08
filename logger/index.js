@@ -37,7 +37,7 @@ class LoggerStream {
 
     format(type, msg) {
         var now = new Date();
-        return "["+(now.getHours().toLocaleString({ minimumIntegerDigits: 2 }))+":"+(now.getMinutes().toLocaleString({ minimumIntegerDigits: 2 }))+":"+(now.getSeconds().toLocaleString({ minimumIntegerDigits: 2 }))+"] ("+this.name+"/"+type+"): "+msg+"\n";
+        return "["+(now.getHours().toLocaleString('en-US', { minimumIntegerDigits: 2 }))+":"+(now.getMinutes().toLocaleString('en-US', { minimumIntegerDigits: 2 }))+":"+(now.getSeconds().toLocaleString('en-US', { minimumIntegerDigits: 2 }))+"] ("+this.name+"/"+type+"): "+msg+"\n";
     }
 
     send(msg) {
@@ -79,7 +79,7 @@ function safeExec(func, logger, args, crash) {
         func(... args);
     } catch (e) {
         logger.error(e);
-        if (crash) logger.crash();
+        if (crash) logger.mkCrash();
     }
 }
 
