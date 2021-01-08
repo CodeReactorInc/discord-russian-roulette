@@ -1,0 +1,9 @@
+{
+    "game.session.exists": "A session already exists!",
+    "bot.command.new": "Creating a new session",
+    "bot.command.new.created": "Session created with successful! You and your friends can join with '$0join'",
+    "bot.command.join": "Joining in a game",
+    "bot.generic.session.noexists": "Doesn't have a session created, create one with '$0new'",
+    "bot.generic.game.started": "The game already started!",
+    "bot."
+}
