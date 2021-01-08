@@ -7,11 +7,13 @@ const manager = new Logger.Logger();
 manager.addStream(process.stdout);
 
 const logger = manager.getLogger('Bot Client');
+const initlogger = manager.getLogger('Bot Tester');
 
 bot({
     botToken: process.env.BOT_TOKEN,
     prefix: "!",
-    autoCompletWithBot: true
+    autoCompletWithBot: true,
+    language: "en-US"
 }, {
     sessions: new Map(),
     language: new DRRLanguages(__dirname+'/../languages/en-US.json'),
@@ -19,10 +21,13 @@ bot({
     manager: manager
 }, (error, client, disconnect) => {
     if (error) {
-        console.error(error);
+        initlogger.error(error);
+        initlogger.mkCrash();
+        process.exit(1);
     } else if (disconnect) {
-        console.error("The bot has disconnected");
+        initlogger.warn("The bot has disconnected");
+        process.exit(1);
     } else {
-        console.log("Bot logged as: "+client.user.tag);
+        initlogger.log("Bot logged as: "+client.user.tag);
     }
 });
