@@ -1,5 +1,6 @@
 {
     "token": "example",
     "prefix": "!",
-    "autocompletwithbot": true
+    "autoCompletWithBot": true,
+    "language": "en-US"
 }
