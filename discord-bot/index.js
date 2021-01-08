@@ -218,94 +218,94 @@ module.exports = (CONFIG, CACHE, callback) => {
             if (session.index === 0) {
                 if (session.rng === 1) {
                     if (!session.players[0].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     }
                 } else {
                     if (session.players[0].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     }
                     session.index++;
                 }
             } else if (session.index === 1) {
                 if (session.rng === 2) {
                     if (!session.players[1].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     }
                 } else {
                     if (session.players[1].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     }
                     session.index++;
                 }
             } else if (session.index === 2) {
                 if (session.rng === 3) {
                     if (!session.players[2].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     }
                 } else {
                     if (session.players[2].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     }
                     session.index++;
                 }
             } else if (session.index === 3) {
                 if (session.rng === 4) {
                     if (!session.players[3].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     }
                 } else {
                     if (session.players[3].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     }
                     session.index++;
                 }
             } else if (session.index === 4) {
                 if (session.rng === 5) {
                     if (!session.players[4].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                         CACHE.sessions.delete(message.guild.id + message.channel.id);
                     }
                 } else {
                     if (session.players[4].isBot) {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].name], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     } else {
-                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed), [session.players[session.index].user.tag], [])});
+                        message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.nokilled", 0x00e9ed, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     }
                     session.index++;
                 }
             } else {
                 if (!session.players[5].isBot) {
-                    message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].user.tag], [])});
+                    message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, session.players[session.index].user.avatarURL()), [session.players[session.index].user.tag], [])});
                     CACHE.sessions.delete(message.guild.id + message.channel.id);
                 } else {
-                    message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000), [session.players[session.index].name], [])});
+                    message.channel.send({embed: CACHE.language.replaceEmbed(CACHE.language.generateEmbed("bot.command.next", "bot.command.next.killed", 0x000000, "https://cdn.codereactor.tk/codereactor/square.png"), [session.players[session.index].name], [])});
                     CACHE.sessions.delete(message.guild.id + message.channel.id);
                 }
             }
