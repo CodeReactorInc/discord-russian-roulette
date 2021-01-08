@@ -1,13 +1,22 @@
 const bot = require(__dirname+'/index.js');
-const DRRLanguages = require(__dirname+'/../languages/index.js');
+const DRRLanguages = require(__dirname+'/../languages');
+const Logger = require('drr-logger');
+const fs = require('fs');
+
+const manager = new Logger.Logger();
+manager.addStream(process.stdout);
+
+const logger = manager.getLogger('Bot Client');
 
 bot({
-    token: process.env.BOT_TOKEN,
+    botToken: process.env.BOT_TOKEN,
     prefix: "!",
-    autocompletwithbot: true
+    autoCompletWithBot: true
 }, {
     sessions: new Map(),
-    language: new DRRLanguages(__dirname+'/../languages/en-US.json')
+    language: new DRRLanguages(__dirname+'/../languages/en-US.json'),
+    logger: logger,
+    manager: manager
 }, (error, client, disconnect) => {
     if (error) {
         console.error(error);
