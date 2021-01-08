@@ -1,0 +1,25 @@
+{
+  "name": "drr-updater",
+  "version": "1.0.0",
+  "description": "Discord Russian Roulette Updater",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeReactorInc/discord-russian-roulette.git"
+  },
+  "keywords": [
+    "discord",
+    "russian",
+    "roulette",
+    "updater"
+  ],
+  "author": "Code Reactor",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CodeReactorInc/discord-russian-roulette/issues"
+  },
+  "homepage": "https://github.com/CodeReactorInc/discord-russian-roulette#readme"
+}

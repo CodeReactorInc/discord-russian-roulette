@@ -1,0 +1,34 @@
+{
+  "name": "discord-russian-roulette",
+  "version": "1.0.0",
+  "description": "Discord Bot to you play Russian Roulette with your friends",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeReactorInc/discord-russian-roulette.git"
+  },
+  "keywords": [
+    "discord",
+    "russian",
+    "roulette"
+  ],
+  "author": "Code Reactor",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CodeReactorInc/discord-russian-roulette/issues"
+  },
+  "homepage": "https://github.com/CodeReactorInc/discord-russian-roulette#readme",
+  "optionalDependencies": {
+    "@nodegui/nodegui": "^0.28.0"
+  },
+  "dependencies": {
+    "@nodegui/nodegui": "^0.28.0",
+    "drr-bot": "file:discord-bot",
+    "drr-interface": "file:interface",
+    "drr-languages": "file:languages",
+    "drr-updater": "file:updater"
+  }
+}

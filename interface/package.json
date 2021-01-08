@@ -1,0 +1,28 @@
+{
+  "name": "drr-interface",
+  "version": "1.0.0",
+  "description": "Discord Russian Roulette Interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeReactorInc/discord-russian-roulette.git"
+  },
+  "keywords": [
+    "discord",
+    "russian",
+    "roulette",
+    "interface"
+  ],
+  "author": "Code Reactor",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/CodeReactorInc/discord-russian-roulette/issues"
+  },
+  "homepage": "https://github.com/CodeReactorInc/discord-russian-roulette#readme",
+  "dependencies": {
+    "@nodegui/nodegui": "^0.28.0"
+  }
+}
