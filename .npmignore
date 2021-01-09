@@ -1,3 +1,5 @@
 bootstrap/**
 .vscode/**
 other/**
+build/**
+build.json
