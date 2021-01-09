@@ -1,0 +1,24 @@
+{
+    "compile": [
+        "discord-bot",
+        "interface",
+        "languages",
+        "bin",
+        "logger",
+        "node_modules",
+        "updater",
+        "config.json",
+        "index.js",
+        "package.json"
+    ],
+    "mkdir": [
+        "runtime"
+    ],
+    "download": [
+        {
+            "url": "https://nodejs.org/dist/v14.15.4/win-x64/node.exe",
+            "file": "node.exe",
+            "compiled": "runtime/node.exe"
+        }
+    ]
+}
