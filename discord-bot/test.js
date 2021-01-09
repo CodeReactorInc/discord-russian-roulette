@@ -1,6 +1,6 @@
 const bot = require(__dirname+'/index.js');
-const DRRLanguages = require(__dirname+'/../languages');
-const Logger = require('drr-logger');
+const DRRLanguages = require(__dirname+'/../languages/index.js');
+const Logger = require(__dirname+'/../logger/index.js');
 const fs = require('fs');
 
 const manager = new Logger.Logger();

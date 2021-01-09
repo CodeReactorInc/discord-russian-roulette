@@ -1,7 +1,7 @@
 {
     "game.session.exists": "A session already exists!",
     "bot.command.new": "Creating a new session",
-    "bot.command.new.created": "Session created with successful! You and your friends can join with '$0join'",
+    "bot.command.new.created": "Session created with successful! Your friends can join with '$0join'",
     "bot.command.join": "Joining in a game",
     "bot.command.join.full": "Doesn't have space for you, the session are full",
     "bot.command.join.already": "You already are in the session!",

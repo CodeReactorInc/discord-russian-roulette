@@ -24,12 +24,8 @@
   "optionalDependencies": {
     "@nodegui/nodegui": "^0.28.0"
   },
-  "dependencies": {
-    "@nodegui/nodegui": "^0.28.0",
-    "drr-bot": "file:discord-bot",
-    "drr-interface": "file:interface",
-    "drr-languages": "file:languages",
-    "drr-logger": "file:logger",
-    "drr-updater": "file:updater"
-  }
+  "dependencies": {	
+    "discord.js": "^12.5.1"
+  },
+  "private": "true"
 }
