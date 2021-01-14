@@ -1,5 +1,6 @@
-import urllib
+import urllib.request
 import os
+import math
 
 class Cache:
     def __init__(self, cbd):
@@ -10,13 +11,16 @@ class Cache:
         if os.path.isfile(cachedir+"/"+cacheObj.file): return
         host = urllib.request.urlopen(cacheObj.url)
         file = open(cachedir+"/"+cacheObj.file, 'wb')
-        print("Download "+file+" with size: "+host.getheader('content-length'))
+        print("Download "+cacheObj.file+" with size: "+host.getheader('content-length'))
         dlsize = 0
+        lastshow = 0
         while True:
             buff = host.read(8192)
             if not buff: break
             dlsize += len(buff)
-            print("Downloading "+file+" ("+dlsize+"/"+host.getheader('content-length')+")")
+            if (dlsize / 1000000) - (lastshow / 1000000) >= 1:
+                lastshow = dlsize
+                print("Downloading "+cacheObj.file+" ("+str(dlsize)+"/"+host.getheader('content-length')+")")
             file.write(buff)
 
         print("File downloaded with successful!")
