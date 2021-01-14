@@ -24,7 +24,7 @@
   "optionalDependencies": {
     "@nodegui/nodegui": "^0.28.0"
   },
-  "dependencies": {	
+  "dependencies": {
     "discord.js": "^12.5.1"
   },
   "private": "true"
