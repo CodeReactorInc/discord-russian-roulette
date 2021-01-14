@@ -331,7 +331,38 @@ module.exports = (CONFIG, CACHE, callback) => {
 
             message.channel.send({embed: CACHE.language.generateEmbed("bot.command.cancel", "bot.command.cancel.cancelled", 0x00ff00)});
         } else if (cmd === "help") {
-
+            message.channel.send({embed: CACHE.language.generateEmbed("bot.command.help",
+                "bot.command.help.description",
+                0x00ff00, null, [
+                    {
+                        name: CONFIG.prefix+"new",
+                        value: CACHE.language.getFromCode("bot.command.help.new")
+                    },
+                    {
+                        name: CONFIG.prefix+"join",
+                        value: CACHE.language.getFromCode("bot.command.help.join")
+                    },
+                    {
+                        name: CONFIG.prefix+"exit",
+                        value: CACHE.language.getFromCode("bot.command.help.exit")
+                    },
+                    {
+                        name: CONFIG.prefix+"start",
+                        value: CACHE.language.getFromCode("bot.command.help.start")
+                    },
+                    {
+                        name: CONFIG.prefix+"next",
+                        value: CACHE.language.getFromCode("bot.command.help.next")
+                    },
+                    {
+                        name: CONFIG.prefix+"cancel",
+                        value: CACHE.language.getFromCode("bot.command.help.cancel")
+                    },
+                    {
+                        name: CONFIG.prefix+"help",
+                        value: CACHE.language.getFromCode("bot.command.help.help")
+                    }
+                ])});
         }
     });
 
