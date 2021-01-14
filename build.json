@@ -9,7 +9,8 @@
         "updater",
         "config.json",
         "index.js",
-        "package.json"
+        "package.json",
+        "Start.bat"
     ],
     "mkdir": [
         "runtime"
