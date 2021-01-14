@@ -25,6 +25,7 @@
     "@nodegui/nodegui": "^0.28.0"
   },
   "dependencies": {
+    "@nodegui/nodegui": "^0.28.0",
     "discord.js": "^12.5.1"
   },
   "private": "true"
