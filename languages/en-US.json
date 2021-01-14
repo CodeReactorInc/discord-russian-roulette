@@ -21,6 +21,15 @@
     "bot.command.cancel": "Session cancelled and deleted",
     "bot.command.cancel.owner": "Only the owner of session can cancel and delete the session",
     "bot.command.cancel.cancelled": "The game has cancelled and the session deleted",
+    "bot.command.help": "Getting help from bot",
+    "bot.command.help.description": "Below has the command list and what they do",
+    "bot.command.help.new": "Create a new session if haven't one",
+    "bot.command.help.join": "Join to a not started session",
+    "bot.command.help.exit": "Exit from a not started session",
+    "bot.command.help.start": "Start a session and block players from join or exit",
+    "bot.command.help.next": "Get the next event of the game",
+    "bot.command.help.cancel": "Cancel a not started and a started game",
+    "bot.command.help.help": "Show what are the command list from bot",
     "bot.generic.session.noexists": "Doesn't have a session created, create one with '$0new'",
     "bot.generic.game.started": "The session is already started!"
 }
